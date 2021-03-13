@@ -1,12 +1,23 @@
-/* Patrones globales del CSS */
-body { margin: 0; padding:0;  !important; }
+body { margin: 0; }
 
-header, main, footer, { display: block; }
+
+header, main, nav, figure, article, footer { display: block; }
+header {font-family: Arial, sans-serif;}
 
 /* Maquetación, Estilo y Acabados en CSS */
 
 /* Header */
-header { width: 100%; height: 100px; margin: 0; float: none; position: fixed; top: 0; left: 0; z-index: 99999; background: #fff; }
+header { width: 100%; height: 100px; margin: 0; float: none; position: fixed; top: 0; left: 0; z-index: 99999; background-color: white; }
+header article { width: 870px; height: 90px; margin: 0 auto; float: none; position: relative; }
+
+header article figure { width: 94px; height: 110px; margin: 0; float: left; position: relative; }
+header article figure a { width: 100%; height: auto; margin: 0 auto; float: none; position: relative; display: block; transition: all 0.3s ease-in; }
+header article figure a img { width: 200px; height: auto; margin: 0 auto; float: none; position: relative; display: block; }
+
+header article nav { width: 435px; height: 40px; margin: 40px; float: right; position: relative; }
+header article nav a { width: auto; height: auto; margin: 0 15px; float: left; position: relative; display: block; padding: 12px 0; text-decoration: none; color:#000000; font-weight: 400; font-size: 1em; line-height: 1em; letter-spacing: 0.09em; transition: all 0.3s ease-in; }
+header article nav a.signup-boton { color: white; padding:10px; background: #D94A64; border-radius: 5px; }
+header article nav a:hover { color:white; color: #720033;  transition: all 0.3s ease-in; }
 
 /* Main */
 
